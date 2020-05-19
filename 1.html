@@ -4,6 +4,16 @@
   <title>WEB1 - HTML</title>
   <meta charset="utf-8">
   <script>
+     //글자색 , 배경색과 관련된 객체 생성 
+   var Body = {
+    setColor : function(color){
+      document.querySelector('body').style.color = color;
+    },
+    setBackgroundColor : function(color){
+      document.querySelector('body').style.backgroundColor = color;
+    }
+   }
+    /*
     // 버튼 클릭 시 글자색 설정해주는 함수
         function BodySetColor(color){
           document.querySelector('body').style.color = color;
@@ -16,7 +26,23 @@
         
         //   낮버젼일땐 글자색이 블루 
         //   밤버젼일땐 글자색이 파우더 블루  
-    
+    */
+
+
+        // 링크의 색과 관련된 객체 생성
+    var Link = {
+      setColor : function(color){
+            var Alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < Alist.length){
+                Alist[i].style.color = color;
+                i = i + 1;
+            }
+
+        }
+
+    }
+/*
         function LinkedSetColor(color){
                 var Alist = document.querySelectorAll('a');
                 var i = 0;
@@ -26,29 +52,29 @@
                 }
     
         }
-    
+*/ 
         function nightDayHandler(self){
         var target = document.querySelector('body');
             if(self.value === 'day'){
-                BodySetBackgroundColor('black');
-                BodySetColor('white');
+                Body.setBackgroundColor('black');
+                Body.setColor('white');
                 self.value = 'night';
     
-                LinkedSetColor('powderblue');
+                Link.setColor('powderblue');
     
             }else{
-              BodySetBackgroundColor('white');
-                BodySetColor('black');
+                Body.setBackgroundColor('white');
+                Body.setColor('black');
                 self.value = 'day';
     
-                LinkedSetColor('blue');
+                Link.setColor('blue');
                 } 
           }
     
       </script>
     </head>
     <body>
-      <h1><a href="1.html">HTML</a></h1>
+      <h1><a href="index.html">WEB</a></h1>
     
       <input id = "night_day" type = "button" value = "day" onclick = "
           
