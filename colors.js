@@ -2,10 +2,12 @@
    //글자색 , 배경색과 관련된 객체 생성 
    var Body = {
     setColor : function(color){
-      document.querySelector('body').style.color = color;
+      //document.querySelector('body').style.color = color;
+      $("body").css("color" , color)
     },
     setBackgroundColor : function(color){
-      document.querySelector('body').style.backgroundColor = color;
+      //document.querySelector('body').style.backgroundColor = color;
+      $("body").css("backgroundColor" , color)
     }
    }
 /*
@@ -26,12 +28,13 @@
     // 링크의 색과 관련된 객체 생성
     var Link = {
       setColor : function(color){
-            var Alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < Alist.length){
-                Alist[i].style.color = color;
-                i = i + 1;
-            }
+            // var Alist = document.querySelectorAll('a');
+            // var i = 0;
+            // while(i < Alist.length){
+            //     Alist[i].style.color = color;
+            //     i = i + 1;
+            // }
+            $("a").css("color" , color)
 
         }
 
