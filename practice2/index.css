@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  background-color: #ecf0f1;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+h1 {
+  color: #34495e;
+}
+
+.clicked1 {
+  background-color: #f1c40f;
+}
+.clicked2 {
+  background-color: #8e44ad;
+}
+.clicked3 {
+  background-color: #2980b9;
+}
