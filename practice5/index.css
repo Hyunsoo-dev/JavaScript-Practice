@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+
+.js-form {
+  display: flex;
+  justify-content: center;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ecf0f1;
+  font-size: 25px;
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.ul_container {
+  display: flex;
+  justify-content: space-around;
+}
+.finished_title,
+.pending_title {
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.pending li,
+.finished li {
+  margin: 15px;
+}
+
+.pending button,
+.finished button {
+  margin-right: 10px;
+}
